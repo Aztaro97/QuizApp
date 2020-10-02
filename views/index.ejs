@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <!-- --------------  CONTAINER  ----------------- -->
+    <div class="container">
+      <div class="row pt-5 pb-3">
+        <div class="col">
+          <div class="d-flex justify-content-between">
+            <div>
+              <h5 class="text-uppercase">Category: <span id="category" class="font-weight-light"></span></h5>
+            </div>
+            <div>
+              <h5 class="text-uppercase">Difficulty: <span id="difficulty" class="font-weight-light"></span></h5>
+            </div>
+            <div>
+              <p><span id="good"></span> <span id="bad"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row pb-3">
+        <div class="col">
+          <h5 id="question" class="text-center font-weight-bolder text-success text-uppercase"></h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <p class="text-center">
+            <button class="btn btn-block h5 font-weight-bolder text-uppercase" style="background: #fbc531; color: #000;" id="answer1"></button>
+          </p>
+        </div>
+        <div class="col-6">
+          <p class="text-center">
+            <button class="btn btn-block h5 font-weight-bolder text-uppercase" style="background: #fbc531; color: #000;" id="answer2"></button>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <p class="text-center">
+            <button class="btn btn-block h5 font-weight-bolder text-uppercase" style="background: #fbc531; color: #000;" id="answer3"></button>
+          </p>
+        </div>
+        <div class="col-6">
+          <p class="text-center">
+            <button class="btn btn-block h5 font-weight-bolder text-uppercase" style="background: #fbc531; color: #000;" id="answer4"></button>
+          </p>
+        </div>
+      </div>
+      <div class="row pt-5 pb-3">
+        <div class="col">
+          <div class="d-flex justify-content-between">
+            <div id="pop">
+              <button class="btn btn-primary" id="next-btn">Next</button>
+            </div>
+            <div>
+              <button class="btn btn-danger" id="restart">Clear Results</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------  FOOTER  --------------------- -->
+    <%- include('./partials/footer.ejs') %>
+
+    <script src="/js/app.js"></script>
+    <script src="/js/bootstrap.min"></script>
+  </body>
+</html>
