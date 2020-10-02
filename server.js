@@ -11,7 +11,7 @@ app.set('view engine', 'ejs')
 
 // Config Dotenv
 dotenv.config()
-let PORT = process.env.URL_PORT || 3000 ;
+let PORT = process.env.PORT || 3000 ;
 
 // Middleware
 app.use(bodyParser.json());
